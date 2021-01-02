@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    
+        <title>
+        
+            Job Application for iCarly Reviewer
+        
+        </title>
+        
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="icarly_style.css">
+        
+        <script>
+        
+            function checkFull() {
+                
+                var theirFull = document.getElementById("fullName").value;
+                
+                var regex = /^[a-zA-Z\-\s]{2,20}$/;
+                
+                if(regex.test(theirFull)){
+                    
+                    document.getElementById("fullValid").innerHTML = "Input accepted";
+                    
+                }
+                
+                else{
+                    
+                    document.getElementById("fullValid").innerHTML = "Input invalid";
+                
+            }
+                
+            }
+            
+            function checkEmail() {
+                
+                var theirEmail = document.getElementById("email").value;
+                
+                var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                
+                if(regex.test(theirEmail)){
+                    
+                    document.getElementById("emailValid").innerHTML = "Input accepted";
+                    
+                }
+                
+                else{
+                    
+                    document.getElementById("emailValid").innerHTML = "Input invalid";
+                
+            }
+                
+            }
+            
+            function checkNumber() {
+                
+                var theirNumber = document.getElementById("cellNumber").value;
+                
+                var regex = /^\(?([0-9]{3})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/;
+                
+                if(regex.test(theirNumber)){
+                    
+                    document.getElementById("numberValid").innerHTML = "Input accepted";
+                    
+                }
+                
+                else{
+                    
+                    document.getElementById("numberValid").innerHTML = "Input invalid";
+                
+            }
+                
+            }
+            
+            function checkZip(){
+                
+                var theirZip = document.getElementById("zipCode").value;
+                
+                var regex=/^[0-9]{5}$/;
+                
+                 if(regex.test(theirZip)){
+                    
+                    document.getElementById("zipValid").innerHTML = "Input accepted";
+                    
+                }
+                
+                else{
+                    
+                    document.getElementById("zipValid").innerHTML = "Input invalid";
+                
+            }
+                
+            }
+        
+        </script>
+    
+    </head>
+    
+    <body>
+        
+        <h1>Application for iCarly Reviewer Position</h1>
+            
+        <img src="icarly.png" id="logo" alt="iCarly Logo">
+        
+        <p>Are you an avid fan of Nickelodeon TV program <em>iCarly</em>? Are you also a critical individual with strong opinions? Perhaps this position is for you. The position requires reviewers to watch <em>iCarly</em> every weekday for 3 consecutive hours, and take notes to contribute to an analytical report of every existing character in the fictional <em>iCarly</em> universe. Daily compensation includes <strong>1 hot spaghetti taco dish</strong> and <strong>2 4-packs of fat cakes</strong>. Strong journalism skills and prior media experience are strongly preferred.</p>
+        
+        <h3>To express interest in this exciting and fulfilling position, please fill out the following form:</h3>
+        
+        <form>
+        
+            <table border="0">
+            
+                <tr>
+                
+                    <td class="prompt_col">Full Name</td>
+                    <td class="input_col"><input name="fullName" id="fullName" type="text" onblur="checkFull();" required></td>
+                    <td class="valid_col"><span id="fullValid">&nbsp;</span></td>
+                
+                </tr>
+                
+                <tr>
+                
+                    <td class="prompt_col">Date of Birth</td>
+                    <td class="input_col"><input name="birth" id="birthDay" type="date" min="1930-01-01" required>
+                
+                </tr>
+                
+                <tr>
+                
+                    <td class="prompt_col">Email</td>
+                    <td class="input_col"><input name="email" id="email" type="text" onblur="checkEmail();" required>
+                    <td class="valid_col"><span id="emailValid">&nbsp;</span></td>
+                
+                </tr>
+                
+                <tr>
+                
+                    <td class="prompt_col">Cell Phone Number</td>
+                    <td class="input_col"><input name="cellNumber" id="cellNumber" type="text" placeholder="xxx-xxx-xxxx" onblur="checkNumber();" required>
+                    <td class="valid_col"><span id="numberValid">&nbsp;</span></td>
+                
+                </tr>
+                
+                <tr>
+                
+                    <td class="prompt_col">Zip Code</td>
+                    <td class="input_col"><input name="zipCode" id="zipCode" type="numbers" onblur="checkZip();" required>
+                    <td class="valid_col"><span id="zipValid">&nbsp;</span></td>
+                
+                </tr>
+                
+                <tr>
+                
+                    <td class="prompt_col">Preferred Character</td>
+                    <td class="input_col"><input name="flower" type="radio">Carly</td>
+                    <td class="valid_col"><input name="flower" type="radio">Sam</td>
+                    <td class="extra_col"><input name="flower" type="radio">Freddie</td>
+                
+                </tr>
+                
+                <tr>
+                
+                    <td class="prompt_col"><input type="submit"></td>
+                
+                
+                </tr>
+            
+            </table>
+        
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,45 @@
+body{
+    
+    background-color: #DB8E99;
+}
+
+h1{
+    
+    text-align: center;
+    
+    color: #4A1DDE;
+    
+    font-family: verdana;
+}
+
+#logo{
+    
+    width:20%;
+    
+    float: left;
+    
+    padding: 15px;
+}
+
+p{
+    
+    flex:auto;
+}
+
+h3{
+    
+    padding-top: 15px;
+    
+    float:30px;
+    
+    font-family:verdana;
+    
+    color: #4A1DDE;
+}
+
+table{
+    
+    padding-left:50px;
+    
+    float:center;
+}
