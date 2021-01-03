@@ -1,0 +1,41 @@
+body{
+    
+    background-color: #DB8E99;
+    
+}
+
+h3{
+    
+    color: #4A1DDE;
+    
+    font-family: verdana;
+    
+}
+
+#gibby{
+    
+    float:left;
+    
+    width:40%;
+    
+    padding: 15px;
+}
+
+#says{
+    
+    text-align: center;
+    
+    font-size:15px;
+    
+}
+
+#thanks{
+    
+    color: #4A1DDE;
+    
+    font-size:30px;
+    
+    font-family:tahoma;
+    
+    text-align:center;
+}
